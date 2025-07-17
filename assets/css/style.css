@@ -1,0 +1,663 @@
+/************** Basic Style  **************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'AmazonEmber';
+    font-weight: 500;
+}
+
+:root {
+    --color-primary: #157bcf;
+    --color-drak: #00050d;
+    --color-balck: #000000;
+    --color-grey: #e6e6e7;
+    --color-white: #ffffff;
+    --transition-1: all 0.1s linear;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+*[class*="col-4"] {
+    padding: 5px 5px;
+}
+
+*[class*="col-2"] {
+    padding: 10px 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.align-cenetr {
+    align-items: center;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+
+
+
+.left {
+    flex-grow: 1;
+}
+
+
+.hover:hover {
+    background-color: var(--color-grey);
+    color: var(--color-balck);
+    cursor: pointer;
+    box-shadow: 0 -4px 28px 0 rgba(255, 255, 255, 0.2);
+}
+
+.justify-bwtween {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.all-cenetr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***************  ################ Home page  ################  ***************/
+
+/************** Header Style  **************/
+.container-header {
+    max-width: 1750px;
+    margin: auto;
+    background-color: var(--color-drak);
+}
+
+header {
+    background-color: var(--color-drak);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+nav {
+    padding-left: 30px;
+}
+
+.nav-list li a{
+    color: var(--color-white);
+    padding: 10px 20px;
+    transition: var(--transition-1);
+    border-radius: 5px;
+}
+
+.line {
+    width: 2px;
+    height: 24px;
+    background-color: #66696e;
+}
+
+.subsciption {
+    padding: 10px 20px;
+    color: var(--color-white);
+    border-radius: 5px;
+    transition: var(--transition-1);
+}
+
+.search-icon {
+    color: var(--color-white);
+    padding: 13px;
+    border-radius: 50%;
+    transition: var(--transition-1);
+}
+
+
+.lang {
+    padding: 10px 10px;
+    color: var(--color-white);
+    border-radius: 5px;
+    transition: var(--transition-1);
+}
+
+
+.cat {
+    color: var(--color-white);
+    padding: 10px;
+    border-radius: 50%;
+    transition: var(--transition-1);
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/profile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile:hover {
+    border: 3px solid var(--color-white);
+    box-shadow: 0 -4px 28px 0 rgba(255, 255, 255, 0.2);
+}
+
+.dropdown {
+    display: none;
+}
+
+.profile:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--color-drak);
+}
+
+.profile-dropdown-menu li {
+    display: block;
+    color: var(--color-white);
+    padding: 15px 40px;
+}
+
+
+.join-prime-btn button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 6px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.join-prime-btn button:hover {
+    box-shadow: 0 -4px 28px 0 rgba(255, 255, 255, 0.2);
+    background-color: rgba(26, 152, 255, 1);
+}
+
+/************** Hero Section Style  **************/
+
+.home-page-section {
+    background-image: url(../images/sec-bg.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 675px;
+
+}
+
+.black-bg {
+    max-width: 45vw;
+    box-shadow: 250px 0px 50px 0 rgba(0, 0, 0, 0.6);
+    min-height: 675px;
+    background-color: var(--color-balck);
+}
+
+.container-homepage {
+    padding: 70px 0px 0px 80px;
+}
+
+.container-homepage h1 {
+    font-size: 50px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+}
+
+.container-homepage p {
+    font-size: 19px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+}
+
+.signin-prime-btn button {
+    padding: 8px 21px;
+    min-height: 62px;
+    color: var(--color-drak);
+    background-color: var(--color-white);
+    transition: var(--transition-1);
+    border-radius: 7px;
+    border: none;
+    font-size: 19px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.signin-prime-btn button:hover {
+    background: #f1f1f1;
+    color: #4d4d4d;
+    transform: scale(1.050);
+}
+
+/************** Movie Rentals Style  **************/
+
+.Movie-rentals-section {
+    background-image: url(../images/Movie-rentals-bg.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 675px;
+}
+
+.container-movie-rentals {
+    padding: 70px 0px 0px 80px;
+}
+
+.container-movie-rentals h1 {
+    font-size: 50px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+}
+
+.container-movie-rentals p {
+    font-size: 19px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+}
+
+.rent-now-btn button {
+    padding: 8px 21px;
+    min-height: 62px;
+    background-color: var(--color-white);
+    transition: var(--transition-1);
+    border-radius: 7px;
+    border: none;
+    font-size: 19px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.rent-now-btn button:hover {
+    background: #f1f1f1;
+    color: #4d4d4d;
+    transform: scale(1.050);
+}
+
+/************** Favorite Subscriptions Section Style  **************/
+
+.container-fav-sub {
+    padding: 50px 50px 50px 80px;
+    background-color: var(--color-drak);
+}
+
+.fav-sub-logos-inner {
+    padding: 10px;
+}
+
+.fav-sub-content {
+    padding-top: 20px;
+}
+
+.fav-sub-content h1 {
+    font-size: 50px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+    line-height: 1.1;
+}
+
+.fav-sub-content p {
+    font-size: 19px;
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: 42px;
+    line-height: 1.5;
+}
+
+.fav-sub-logos img {
+    display: block;
+    border-radius: 8px;
+    transition: var(--transition-1);
+}
+
+.fav-sub-logos img:hover {
+    box-shadow: 0px 1px 6px 4px #333;
+    cursor: pointer;
+}
+
+/************** Footer Section Style  **************/
+
+.container-footer {
+    padding: 20px;
+    background-color: #222222;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-height: 32px;
+}
+
+.page-link {
+    margin-bottom: 10px;
+}
+
+.page-link li a {
+    color: #60a8f3;
+}
+
+.copy-right {
+    color: #949494;
+    ;
+}
+
+/***************  ################ Movies page  ################  ***************/
+
+
+/*************** Left Content Style  ***************/
+.body-movies {
+    background-color: #000000;
+}
+
+.container-moviepage {
+    padding: 0px 0px 0px 80px;
+}
+
+.movies-sec-hero-page {
+    position: relative;
+}
+
+.prime-logo-small img {
+    height: 35px;
+}
+
+.bhul-chuk-maaf-title-logo {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.watch-now-btn button {
+    padding: 8px 21px;
+    background-color: var(--color-primary);
+}
+
+.movie-para p {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.movie-para p:nth-of-type(1) {
+    color: #37f1a3;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.watch-now-btn button {
+    background-color: #33373e;
+    border: none;
+    padding: 8px 21px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-top: 25px;
+    transition: var(--transition-1);
+}
+
+.movies-hover:hover {
+    transform: scale(1.1);
+    background-color: var(--color-white);
+    color: var(--color-balck);
+    cursor: pointer;
+}
+
+.movie-plus {
+    padding: 21px;
+    background-color: #33373e;
+    font-size: 30px;
+    color: var(--color-white);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 25px;
+    transition: var(--transition-1);
+}
+
+
+.movie-info {
+    padding: 21px;
+    background-color: #33373e;
+    font-size: 30px;
+    color: var(--color-white);
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.movie-last-para i {
+    color: #ffd62c;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.movie-last-para {
+    font-size: 16px;
+    color: var(--color-white);
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/*************** right video styling  ***************/
+.movies-bg-vid video {
+    width: 65vw;
+    display: block;
+    background: #000000;
+    cursor: pointer;
+}
+
+.movies-bg-vid img {
+        width: 65vw;
+    min-height: 557.5px;
+}
+
+.left-box {
+    background-color: #000000a4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.right-video {
+    position: relative;
+}
+
+.gradient-overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1248px;
+    height: 100%;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 56%);
+
+}
+
+.gradient-overlay-buttom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1248px;
+    height: 100%;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 32%);
+    cursor: pointer;
+}
+
+/* movies Section Movies List Styling */
+
+.movies-sec-movies-list {
+    padding: 50px 0;
+}
+
+.container-moviepage h1 {
+    font-size: 40px;
+    color: var(--color-white);
+    font-weight: 900;
+}
+
+/* English Movies Section Styl  */
+
+.movies-in-english-title h3, .movies-in-english-title h4{
+    font-size: 20px;
+    color: var(--color-white);
+    padding: 20px 0 10px 0;
+}
+
+.movies-in-english-title h4:hover {
+    cursor: pointer;
+}
+
+.english-movies-list img {
+    border-radius: 7px;
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+.english-movies-list img:hover {
+    transform: scale(1.15);
+}
+
+/* Top Rated IDMb Movies Section Styl  */
+
+.top-rated-movies-on-IMDb-title h3, .top-rated-movies-on-IMDb-title h4{
+    font-size: 20px;
+    color: var(--color-white);
+    padding: 20px 0 10px 0;
+}
+
+.top-rated-movies-on-IMDb-title h4:hover {
+    cursor: pointer;
+}
+
+.top-rated-movies-on-IDmb-list img {
+    border-radius: 7px;
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+.top-rated-movies-on-IDmb-list img:hover {
+    transform: scale(1.15);
+}
+
+/* Top Movies Section Styl  */
+
+.top-movies-title h3, .top-movies-title h4{
+    font-size: 20px;
+    color: var(--color-white);
+    padding: 20px 0 10px 0;
+}
+
+.top-movies-title h4:hover {
+    cursor: pointer;
+}
+
+.top-movies-list img {
+    border-radius: 7px;
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+.top-movies-list img:hover {
+    transform: scale(1.15);
+}
+
+
+/* Comedy Movies Section Styl  */
+
+.comedy-movies-title h3, .comedy-movies-title h4{
+    font-size: 20px;
+    color: var(--color-white);
+    padding: 20px 0 10px 0;
+}
+
+.comedy-movies-title h4:hover {
+    cursor: pointer;
+}
+
+.comedy-movies-list img {
+    border-radius: 7px;
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+.comedy-movies-list img:hover {
+    transform: scale(1.15);
+}
